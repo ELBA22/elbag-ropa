@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
 
-namespace Core.Interfaces
+namespace Infraestructure.Repositories
 {
-    public interface ICargo : IGenericRepository<Cargo>
+    public class EmpresaRepository : GenericRepository<Empresa> ,ICargo
     {
         
     }

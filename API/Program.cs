@@ -3,17 +3,19 @@ using AspNetCoreRateLimit;
 using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions;
+using Microsoft.Extensions.
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-//builder.Services.ConfigureRateLimiting();
+builder.Services.ConfigureRateLimiting();
 
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
-//builder.Services.ConfigureCors();
-//builder.Services.AddApplicationServices();
+builder.Services.ConfigureCors();
+builder.Services.AddApplicationServices();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

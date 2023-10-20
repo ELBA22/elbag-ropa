@@ -14,6 +14,16 @@ namespace Infraestructure.Data.Configuration
         {
             builder.ToTable("InsumoProveedor");
 
+            builder.HasOne( F => F.Insumos)
+            .WithMany(F => F.InsumoProveedores)
+            .HasForeignKey(F => F.IdInsumo);
+
+            builder.HasOne( F => F.Proveedor)
+            .WithMany( F => F.InsumoProveedores)
+            .HasForeignKey(F => F.IdProveedores);
+
+
+
             
         }
     }

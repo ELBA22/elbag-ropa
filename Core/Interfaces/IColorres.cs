@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entities;
 
 namespace Core.Interfaces
 {
-    public interface ICargo : IGenericRepository<Cargo>
+    public interface IColorres : IGenericRepository<Color>
     {
         
     }

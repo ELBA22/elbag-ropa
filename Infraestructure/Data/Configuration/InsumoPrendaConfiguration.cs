@@ -15,7 +15,7 @@ namespace Infraestructure.Data.Configuration
             builder.ToTable("InsumoPrenda");
 
             builder.HasOne(i => i.Insumos)
-            .WithMany(i => i.InsumosPrendas)
+            .WithMany(i => i.InsumoPrendas)
             .HasForeignKey(i => i.IdInsumo);
             
             builder.HasOne(p => p.Prendas)

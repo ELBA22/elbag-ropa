@@ -32,6 +32,8 @@ namespace Core.Entities
         public ICollection<InsumoPrenda> InsumoPrendas { get; set;}
 
         public ICollection<DetalleOrden> DetalleOrdenes { get; set; }
+
+        
     
     }
 }

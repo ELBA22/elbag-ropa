@@ -23,7 +23,5 @@ namespace Core.Entities
         public Municipio Municipios {get; set; }
 
         public ICollection<InsumoProveedor> InsumoProveedores { get; set; }
-        
-
     }
 }

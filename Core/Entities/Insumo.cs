@@ -21,6 +21,8 @@ namespace Core.Entities
 
         public ICollection<InsumoProveedor> InsumoProveedores { get; set; }
 
+        public ICollection<InsumoPrenda> InsumoPrendas { get; set; }
+
 
     }
 }

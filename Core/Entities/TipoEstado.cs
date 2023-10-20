@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class TipoEstado
+    public class TipoEstado :BaseEntity
     {
         public string Descripcion { get; set; }
 
